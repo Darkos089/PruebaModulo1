@@ -1,13 +1,14 @@
-body {
+body{
     background-color: black;
 }
 
-.nav-img {
+
+.nav-img{
 	width: 40px;
 	margin-right: 10px;
 }
 
-hr {
+hr{
     background-color:rgb(26, 221, 247) ;
     padding: 1px;
 }
