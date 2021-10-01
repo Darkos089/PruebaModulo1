@@ -1,19 +1,17 @@
-body{
-    background-color: black;
+body {
+	background-color: rgb(0, 0, 0);
 }
-
-
-.nav-img{
+.nav-img {
 	width: 40px;
 	margin-right: 10px;
 }
 
-hr{
-    background-color:rgb(26, 221, 247) ;
-    padding: 1px;
+hr {
+	padding: 1px;
+    background-color: rgb(17, 154, 218);
 }
 
-.img-avion{
-    width: 25px;
-    
+.img-qs {
+	width: 25px;
+	padding: 2px;
 }

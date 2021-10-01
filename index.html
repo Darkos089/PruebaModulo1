@@ -19,13 +19,17 @@
     <!-- Normalize -->
     <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
 
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <!--MI CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-none fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img class="nav-img" src="assets/img/viajes.svg" alt="icono viajes"
                     height="40px">Viajes Chile</a>
@@ -46,7 +50,7 @@
     <!-- carroucel  -->
     <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div>
+            <div class="container-fluid">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -81,16 +85,15 @@
     </header>
 
     <!-- Quienes Somos    -->
-    
-    <p class="text-center mt-5">¿Quienes Somos?</p>
-    <hr class=" container mx-auto">
-    <section class="m-5 align-content-center">
-
+    <section class="container-fluid d-none d-sm-block">
+        <p class="h5 text-center mt-5 text-light ">¿Quienes Somos?</p>
+        <hr>
+        <article class="m-5 ">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                     <div class="contenedor-img bg-info text-center" id="iconobg1">
                         <!-- generar boton para esconder contenido -->
-                        <img src="assets/img/plane-solid.svg" class="img-avion" alt="">
+                        <img src="assets/img/plane-solid.svg" class="img-qs" alt="">
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt molestiae soluta
                         quisquam quae culpa animi aliquam dolor excepturi, fugiat pariatur, ullam vitae rem nobis
@@ -110,7 +113,7 @@
                         molestiae tenetur ut consequatur praesentium quasi recusandae.</p>
                     <div class="contenedor-img bg-info text-center" id="iconobg2">
                         <!-- generar boton para esconder contenido -->
-                        <img src="assets/img/plane-solid.svg" class="img-avion" alt="">
+                        <img src="assets/img/mountain-solid.svg" class="img-qs" alt="">
                     </div>
 
 
@@ -119,7 +122,7 @@
                     <div class="contenedor-img bg-info text-center" id="iconobg3">
                         <!-- generar boton para esconder contenido -->
 
-                        <img src="assets/img/plane-solid.svg" class="img-avion" alt="">
+                        <img src="assets/img/route-solid.svg" class="img-qs" alt="">
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt molestiae soluta
                         quisquam quae culpa animi aliquam dolor excepturi, fugiat pariatur, ullam vitae rem nobis
@@ -130,13 +133,62 @@
                         facilis fugiat deleniti vel exercitationem. Culpa, exercitationem dolores.</p>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 
+
     <!-- destacados -->
-
-    <section>
-
+    <section class="container-fluid">
+        <p class="h5 text-center mt-5 text-light  ">Destacados</p>
+        <hr>
+        <div class="m-5 bg-danger">
+            <div class="row">
+                <article class="col-12 col-md-3">
+                    <div class="card mb-2">
+                        <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">Conoce este lugar</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                                est?.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-3">
+                    <div class="card mb-2">
+                        <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">Conoce este lugar</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                                est?.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-3">
+                    <div class="card mb-2">
+                        <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">Conoce este lugar</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                                est?.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-3">
+                    <div class="card mb-2">
+                        <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Conoce este lugar</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                                est?.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
     <!-- Formulario -->
 
@@ -158,8 +210,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <!-- Bootstrap 5.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 </body>
 
 </html>
