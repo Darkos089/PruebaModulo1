@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 
 
-
+// se debe colocar un  Modal para el quines somos en   tamaño sm o md
 
 
 
