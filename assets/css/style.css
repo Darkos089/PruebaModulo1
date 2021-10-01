@@ -15,3 +15,16 @@ hr {
 	width: 25px;
 	padding: 2px;
 }
+
+.card-body{
+    background-color: rgb(109, 109, 109);
+}
+
+.card-text , .card-title{
+    color: rgb(0, 0, 0);
+}
+
+
+.texto-qs{
+    color: rgb(216, 216, 216);
+}
