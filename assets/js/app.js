@@ -27,5 +27,43 @@ $(document).ready(function () {
 
 	//cambio de color al pasar cursor por encima del icono
 
-	
+	$("#icono1").hover(
+		function () {
+			$("#icono1").css("color", "#000000");
+		},
+		function () {
+			$("#icono1").css("color", "#C3C3C3");
+		}
+	);
+	$("#icono2").hover(
+		function () {
+			$("#icono2").css("color", "#000000");
+		},
+		function () {
+			$("#icono2").css("color", "#C3C3C3");
+		}
+	);
+
+	$("#icono3").hover(
+		function () {
+			$("#icono3").css("color", "#000000");
+		},
+		function () {
+			$("#icono3").css("color", "#C3C3C3");
+		}
+	);
+	$("#icono4").hover(
+		function () {
+			$("#icono4").css("color", "#000000");
+		},
+		function () {
+			$("#icono4").css("color", "#C3C3C3");
+		}
+	);
+	var tooltipTriggerList = [].slice.call(
+		document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	);
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl);
+	});
 });
