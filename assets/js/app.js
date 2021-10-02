@@ -20,12 +20,47 @@ $(document).ready(function () {
 
 	// se debe colocar un  Modal para el quines somos en   tamaño sm o md
 
+	//cambio de color al pasar cursor por encima del icono
 
-
-	
-
-	$(".card-text1, .card-text2, .card-text3, .card-text4").css(
-		"display",
-		"none"
+	$("#icono1").hover(
+		function () {
+			$("#icono1").css("color", "#000000");
+		},
+		function () {
+			$("#icono1").css("color", "#C3C3C3");
+		}
 	);
+	$("#icono2").hover(
+		function () {
+			$("#icono2").css("color", "#000000");
+		},
+		function () {
+			$("#icono2").css("color", "#C3C3C3");
+		}
+	);
+
+	$("#icono3").hover(
+		function () {
+			$("#icono3").css("color", "#000000");
+		},
+		function () {
+			$("#icono3").css("color", "#C3C3C3");
+		}
+	);
+	$("#icono4").hover(
+		function () {
+			$("#icono4").css("color", "#000000");
+		},
+		function () {
+			$("#icono4").css("color", "#C3C3C3");
+		}
+	);
+
+
+	var popoverTriggerList = [].slice.call(
+		document.querySelectorAll('[data-bs-toggle="popover"]')
+	);
+	var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+		return new bootstrap.Popover(popoverTriggerEl);
+	});
 });
