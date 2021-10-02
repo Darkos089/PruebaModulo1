@@ -25,7 +25,11 @@ hr {
 	background-color: rgb(141, 140, 140);
 }
 
-.card-text,
+.imgcarta{
+
+}
+
+
 .card-title {
 	color: rgb(0, 0, 0);
 }
@@ -56,3 +60,4 @@ hr {
 .nav-link{
     color: white;
 }
+
