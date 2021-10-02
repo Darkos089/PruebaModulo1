@@ -20,6 +20,11 @@ $(document).ready(function () {
 
 	// se debe colocar un  Modal para el quines somos en   tamaño sm o md
 
+	$(".card-text1, .card-text2, .card-text3, .card-text4").css(
+		"display",
+		"none"
+	);
+
 	//cambio de color al pasar cursor por encima del icono
 
 	$("#icono1").hover(
@@ -55,5 +60,10 @@ $(document).ready(function () {
 			$("#icono4").css("color", "#C3C3C3");
 		}
 	);
-
+	var tooltipTriggerList = [].slice.call(
+		document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	);
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl);
+	});
 });
