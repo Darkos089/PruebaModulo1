@@ -2,7 +2,7 @@
 $(document).ready(function () {
 	console.log("ready!");
 
-//show text cards
+	//show text cards
 
 	$("#destacados1").click(function () {
 		$("#disabletexto1").toggle();
@@ -70,5 +70,12 @@ $(document).ready(function () {
 	);
 	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 		return new bootstrap.Tooltip(tooltipTriggerEl);
+	});
+
+	var myModal = document.getElementById("myModal");
+	var myInput = document.getElementById("myInput");
+
+	myModal.addEventListener("shown.bs.modal", function () {
+		myInput.focus();
 	});
 });

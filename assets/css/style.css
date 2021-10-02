@@ -25,10 +25,8 @@ hr {
 	background-color: rgb(141, 140, 140);
 }
 
-.imgcarta{
-
+.imgcarta {
 }
-
 
 .card-title {
 	color: rgb(0, 0, 0);
@@ -53,11 +51,10 @@ hr {
 
 .linkpage {
 	cursor: pointer;
-    text-decoration: none;
-    color:  white;
+	text-decoration: none;
+	color: white;
 }
 
-.nav-link{
-    color: white;
+.nav-link {
+	color: white;
 }
-
