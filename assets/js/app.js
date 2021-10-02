@@ -2,6 +2,8 @@
 $(document).ready(function () {
 	console.log("ready!");
 
+//show text cards
+
 	$("#destacados1").click(function () {
 		$("#disabletexto1").toggle();
 	});
@@ -18,7 +20,7 @@ $(document).ready(function () {
 		$("#disabletexto4").toggle();
 	});
 
-	// se debe colocar un  Modal para el quines somos en   tamaño sm o md
+	// Cartas desabilitadas al cargar pagina
 
 	$(".card-text1, .card-text2, .card-text3, .card-text4").css(
 		"display",
@@ -60,6 +62,9 @@ $(document).ready(function () {
 			$("#icono4").css("color", "#C3C3C3");
 		}
 	);
+
+	//trigger y var para tooltip.
+
 	var tooltipTriggerList = [].slice.call(
 		document.querySelectorAll('[data-bs-toggle="tooltip"]')
 	);
